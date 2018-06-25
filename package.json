@@ -1,0 +1,30 @@
+{
+  "name": "npm-check-cache",
+  "version": "1.0.0",
+  "description": "npm check cache package",
+  "main": "main.js",
+  "bin": {
+    "npm-check-cache": "main.js"
+  },
+  "dependencies": {
+    "cacache": "^11.0.2",
+    "semver": "^5.5.0"
+  },
+  "devDependencies": {
+    "standard": "^11.x"
+  },
+  "engines": {
+    "node": ">= 6.x"
+  },
+  "author": "Simone Sanfratello <simone@braceslab.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/braceslab/npm-check-cache.git"
+  },
+  "keywords": [
+    "npm",
+    "package",
+    "cache"
+  ]
+}
