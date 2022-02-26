@@ -4,7 +4,11 @@ const cacache = require('cacache/en')
 const path = require('path')
 const semver = require('semver')
 
-const cachePath = path.join(require('os').homedir(), '/.npm/_cacache')
+const homeDir = require('os').homedir()
+const isWin = require('os').platform().startsWith("win")
+
+let toCacache = isWin ? '/AppData/Local/npm-cache/_cacache' : '/.npm/_cacache'
+let cachePath = path.join(homeDir, toCacache)
 
 const filter = process.argv.length > 2 ? process.argv.pop() : null
 
