@@ -1,6 +1,6 @@
 {
   "name": "npm-check-cache",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "npm check cache package",
   "main": "main.js",
   "bin": {
